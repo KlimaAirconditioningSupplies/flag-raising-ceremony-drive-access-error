@@ -26,25 +26,29 @@
 
     .container {
       max-width: 600px;
-      text-align: center;
+      text-align: left;
     }
 
-    .container img {
-      width: 72px;
-      height: 72px;
-      margin-bottom: 20px;
+    .error-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .error-header img {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
     }
 
     h1 {
       font-size: 24px;
       font-weight: normal;
-      margin: 0 0 10px;
+      margin: 0;
     }
 
     ul {
-      text-align: left;
       padding-left: 20px;
-      display: inline-block;
     }
 
     a {
@@ -62,8 +66,10 @@
 <body>
   <div class="wrapper">
     <div class="container">
-      <img src="error-icon.png" alt="Error Icon">
-      <h1>This site can’t be reached</h1>
+      <div class="error-header">
+        <img src="error-icon.png" alt="Error Icon">
+        <h1>This site can’t be reached</h1>
+      </div>
       <p><strong>www.google.com</strong> took too long to respond.</p>
       <p>Try:</p>
       <ul>
