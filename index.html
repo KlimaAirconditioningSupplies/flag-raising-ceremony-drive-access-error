@@ -50,3 +50,35 @@
     ul {
       padding-left: 20px;
     }
+
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .gray {
+      color: gray;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="error-header">
+        <img src="error-icon.png">
+        <h1>This site can’t be reached</h1>
+      </div>
+      <p><strong>www.google.com</strong> took too long to respond.</p>
+      <p>Try:</p>
+      <ul>
+        <li>Checking the connection</li>
+        <li><a href="#">Checking the proxy and the firewall</a></li>
+        <li><a href="#">Running Windows Network Diagnostics</a></li>
+      </ul>
+      <p class="gray">ERR_CONNECTION_TIMED_OUT</p>
+    </div>
+  </div>
+</body>
+</html>
